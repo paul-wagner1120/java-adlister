@@ -31,11 +31,5 @@ public class HelloWorldServlet extends HttpServlet {
             out.println("<h1>" + count + "</h1><h1>Hello, " + name + "!</h1>");
         }
 
-
-
-//        for (int i = 0; i < count; i++){
-//            out.println("<h1>Hello, World!</h1>");
-//        }
-
     }
 }
