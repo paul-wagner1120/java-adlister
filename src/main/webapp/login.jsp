@@ -28,7 +28,6 @@
     response.sendRedirect(redirectURL);
 }%>
 
-<h1>git hub check</h1>
 </body>
 </html>
 
