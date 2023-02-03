@@ -13,17 +13,17 @@
 <body>
 <form method="post" action="login.jsp">
     <div>
-        <label><b>Username</b></label>
-        <input  type="text" placeholder="Enter Username" name="username" required>
+        <label for="username"><b>Username</b></label>
+        <input  type="text" placeholder="Enter Username" id="username" name="username" required>
         <br>
-        <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="pword" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="password" name="password" required>
 
         <button type="submit">Login</button>
     </div>
 </form>
 
-<% if (Objects.equals(request.getParameter("username"), "admin") && Objects.equals(request.getParameter("pword"), "password")){
+<% if (Objects.equals(request.getParameter("username"), "admin") && Objects.equals(request.getParameter("password"), "password")){
     String redirectURL = "/profile.jsp";
     response.sendRedirect(redirectURL);
 }%>
