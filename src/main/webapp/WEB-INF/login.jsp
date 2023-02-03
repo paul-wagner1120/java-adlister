@@ -11,7 +11,7 @@
     <title>Login</title>
 </head>
 <body>
-<form method="post" action="login.jsp">
+<form method="post" action="login">
     <div>
         <label for="username"><b>Username</b></label>
         <input  type="text" placeholder="Enter Username" id="username" name="username" required>
@@ -22,8 +22,8 @@
         <button type="submit">Login</button>
     </div>
 </form>
-
-<% if (Objects.equals(request.getParameter("username"), "admin") && Objects.equals(request.getParameter("password"), "password")){
+<%--    JSP Solution    --%>
+<% if (request.getMethod().equalsIgnoreCase("post") && Objects.equals(request.getParameter("username"), "admin") && Objects.equals(request.getParameter("password"), "password")){
     String redirectURL = "/profile.jsp";
     response.sendRedirect(redirectURL);
 }%>
