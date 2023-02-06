@@ -17,7 +17,7 @@ public class BeanTest {
             quoteArray.add(quote3);
 
         for (Quote quote : quoteArray){
-            System.out.println(quote.getAuthor() + " " + quote.getContent());
+            System.out.println("Author: " + quote.getAuthor() + " Content: " + quote.getContent());
         }
     }
 
